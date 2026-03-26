@@ -3400,6 +3400,7 @@ textarea.form__input{ resize: vertical; }
   }
 
   .contact-page--impact .contact-hero__shell::before{
+    display: none;
     inset: auto -18% -14% auto;
     width: 200px;
     height: 200px;
