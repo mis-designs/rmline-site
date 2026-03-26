@@ -212,7 +212,7 @@
       "name": "Tappeti cotone",
       "featured": true,
       "desc": "Tappeti in cotone con lavorazioni e varianti decorative per brand, retail e private label.",
-      "cover": "assets/img/products/tappeti-cotone/cover.jpg",
+      "cover": "assets/img/products/tappeti-cotoNe/cover.jpg",
       "items": [
         {
           "id": "tappeto-cotone-01",
@@ -224,14 +224,14 @@
             "B2B"
           ],
           "images": [
-            "assets/img/products/tappeti-cotone/tappeto-cotone-01/01.jpg",
-            "assets/img/products/tappeti-cotone/tappeto-cotone-01/02.jpg",
-            "assets/img/products/tappeti-cotone/tappeto-cotone-01/03.jpg",
-            "assets/img/products/tappeti-cotone/tappeto-cotone-01/04.jpg",
-            "assets/img/products/tappeti-cotone/tappeto-cotone-01/05.jpg",
-            "assets/img/products/tappeti-cotone/tappeto-cotone-01/06.jpg",
-            "assets/img/products/tappeti-cotone/tappeto-cotone-01/07.jpg",
-            "assets/img/products/tappeti-cotone/tappeto-cotone-01/08.jpg"
+            "assets/img/products/tappeti-cotoNe/tappeto-cotone-01/01.jpg",
+            "assets/img/products/tappeti-cotoNe/tappeto-cotone-01/02.jpg",
+            "assets/img/products/tappeti-cotoNe/tappeto-cotone-01/03.jpg",
+            "assets/img/products/tappeti-cotoNe/tappeto-cotone-01/04.jpg",
+            "assets/img/products/tappeti-cotoNe/tappeto-cotone-01/05.jpg",
+            "assets/img/products/tappeti-cotoNe/tappeto-cotone-01/06.jpg",
+            "assets/img/products/tappeti-cotoNe/tappeto-cotone-01/07.jpg",
+            "assets/img/products/tappeti-cotoNe/tappeto-cotone-01/08.jpg"
           ]
         },
         {
@@ -244,11 +244,11 @@
             "Retail"
           ],
           "images": [
-            "assets/img/products/tappeti-cotone/tappeto-cotone-02/01.jpg",
-            "assets/img/products/tappeti-cotone/tappeto-cotone-02/02.jpg",
-            "assets/img/products/tappeti-cotone/tappeto-cotone-02/03.jpg",
-            "assets/img/products/tappeti-cotone/tappeto-cotone-02/04.jpg",
-            "assets/img/products/tappeti-cotone/tappeto-cotone-02/05.jpg"
+            "assets/img/products/tappeti-cotoNe/tappeto-cotone-02/01.jpg",
+            "assets/img/products/tappeti-cotoNe/tappeto-cotone-02/02.jpg",
+            "assets/img/products/tappeti-cotoNe/tappeto-cotone-02/03.jpg",
+            "assets/img/products/tappeti-cotoNe/tappeto-cotone-02/04.jpg",
+            "assets/img/products/tappeti-cotoNe/tappeto-cotone-02/05.jpg"
           ]
         },
         {
@@ -261,13 +261,13 @@
             "Qualita"
           ],
           "images": [
-            "assets/img/products/tappeti-cotone/tappeto-cotone-03/01.jpg",
-            "assets/img/products/tappeti-cotone/tappeto-cotone-03/02.jpg",
-            "assets/img/products/tappeti-cotone/tappeto-cotone-03/03.jpg",
-            "assets/img/products/tappeti-cotone/tappeto-cotone-03/04.jpg",
-            "assets/img/products/tappeti-cotone/tappeto-cotone-03/05.jpg",
-            "assets/img/products/tappeti-cotone/tappeto-cotone-03/06.jpg",
-            "assets/img/products/tappeti-cotone/tappeto-cotone-03/07.jpg"
+            "assets/img/products/tappeti-cotoNe/tappeto-cotone-03/01.jpg",
+            "assets/img/products/tappeti-cotoNe/tappeto-cotone-03/02.jpg",
+            "assets/img/products/tappeti-cotoNe/tappeto-cotone-03/03.jpg",
+            "assets/img/products/tappeti-cotoNe/tappeto-cotone-03/04.jpg",
+            "assets/img/products/tappeti-cotoNe/tappeto-cotone-03/05.jpg",
+            "assets/img/products/tappeti-cotoNe/tappeto-cotone-03/06.jpg",
+            "assets/img/products/tappeti-cotoNe/tappeto-cotone-03/07.jpg"
           ]
         }
       ]
