@@ -9,7 +9,7 @@
   --slate: #B8AEA4;              /* greige morbido */
   --brand: #8A6A4A;              /* noce/caramello elegante */
 
-  --cta: #725220b8;                /* terracotta furniture */
+  --cta: #725220;                /* terracotta furniture */
   --cta-hover: #8D5630;          /* hover più profondo */
 
   --radius: 10px;
@@ -86,7 +86,7 @@ html { scroll-padding-top: var(--header-h, 90px); }
 
 .nav__link{
   position: relative;
-  font-weight: 650;
+  font-weight: 600;
   color: #161616;
   padding: 10px 2px 4px;
   border-radius: 0;
@@ -451,9 +451,6 @@ html { scroll-padding-top: var(--header-h, 90px); }
   font-weight: 800;
   letter-spacing: .12em;
   text-transform: uppercase;
-}
-
-.showcase-card__count{
   background: rgba(255,255,255,.12);
   border: 1px solid rgba(255,255,255,.18);
   color: rgba(255,255,255,.9);
@@ -619,7 +616,7 @@ html { scroll-padding-top: var(--header-h, 90px); }
   margin: 0;
   color: #171310;
   font-size: clamp(28px, 3vw, 34px);
-  font-weight: 850;
+  font-weight: 800;
   line-height: .98;
   letter-spacing: -.03em;
 }
@@ -992,7 +989,7 @@ html { scroll-padding-top: var(--header-h, 90px); }
   gap:10px;
   padding: 12px 16px;
   border-radius: 30px;
-  font-weight: 850;
+  font-weight: 800;
   border: 1px solid transparent;
   cursor:pointer;
 }
@@ -1129,7 +1126,7 @@ html { scroll-padding-top: var(--header-h, 90px); }
   margin:0;
   font-size: 16px;
   color: var(--navy);
-  font-weight: 950;
+  font-weight: 900;
   letter-spacing: .02em;
   text-transform: uppercase;
 }
@@ -1317,7 +1314,7 @@ textarea.form__input{ resize: vertical; }
 .about__title{
   margin: 0 0 14px;
   font-size: clamp(34px, 4vw, 56px);
-  font-weight: 950;
+  font-weight: 900;
   letter-spacing: .2px;
 }
 
@@ -1390,7 +1387,7 @@ textarea.form__input{ resize: vertical; }
 .cookie__text h3{
   margin: 0 0 6px;
   color: var(--navy);
-  font-weight: 950;
+  font-weight: 900;
   font-size: 18px;
 }
 
@@ -1935,7 +1932,7 @@ textarea.form__input{ resize: vertical; }
 
 .services__title{
   font-size: 28px;
-  font-weight: 950;
+  font-weight: 900;
   color: var(--navy);
   margin-bottom: 10px;
 }
@@ -3087,6 +3084,39 @@ textarea.form__input{ resize: vertical; }
     overflow-y: auto;
     border-radius: 18px;
     padding: 10px;
+  }
+}
+
+/* Half-screen breakpoint: improve hero slider at intermediate widths */
+@media (max-width: 860px) and (min-width: 561px){
+  .slide{
+    aspect-ratio: 4 / 3;
+  }
+
+  .hero__content{
+    align-items: flex-end;
+  }
+
+  .hero__inner{
+    width: calc(100% - 24px);
+    margin: 0 auto 14px;
+    padding: 16px 16px 50px;
+    border-radius: 20px;
+    background: linear-gradient(180deg, rgba(21, 17, 14, .10), rgba(21, 17, 14, .64));
+    backdrop-filter: blur(4px);
+  }
+
+  .hero__title{
+    max-width: 15ch;
+  }
+
+  .hero__sub{
+    max-width: 40ch;
+  }
+
+  .hero__actions{
+    flex-wrap: wrap;
+    gap: 8px;
   }
 }
 
