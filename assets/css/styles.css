@@ -2551,6 +2551,7 @@ textarea.form__input{ resize: vertical; }
   border-radius: 999px;
   background: rgba(255,255,255,.06);
   filter: blur(6px);
+  display: none;
 }
 
 @media (min-width: 1040px){
@@ -3084,10 +3085,6 @@ textarea.form__input{ resize: vertical; }
     overflow-y: auto;
     border-radius: 18px;
     padding: 10px;
-  }
-
-  .contact-page--impact .contact-hero__shell::before{
-    display: none;
   }
 }
 
