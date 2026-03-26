@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="it">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Categoria</title>
+    <link rel="stylesheet" href="assets/css/styles.css" />
+    <script defer src="assets/js/main.js"></script>
+</head>
+
+<body>
+    <header class="site-header">
+        <div id="site-navbar"></div>
+    </header>
+
+    <main class="page category-page">
+        <div class="container">
+            <section class="category-hero" aria-labelledby="categoryTitle">
+                <div class="category-hero__copy">
+                    <p class="category-hero__eyebrow">Collezione RM Line</p>
+                    <h1 id="categoryTitle">Categoria</h1>
+                    <p id="categoryDesc">Seleziona un prodotto per aprire la galleria e la descrizione.</p>
+                </div>
+                <div class="category-hero__meta" id="categoryMeta" aria-label="Informazioni collezione"></div>
+            </section>
+
+            <section class="category-section" aria-labelledby="categorySectionTitle">
+                <div class="category-section__head">
+                    <div>
+                        <p class="category-section__kicker">Selezione modelli</p>
+                        <h2 class="category-section__title" id="categorySectionTitle">Esplora la collezione</h2>
+                    </div>
+                </div>
+
+                <div class="collection-grid" id="categoryGrid"></div>
+            </section>
+
+            <section class="category-cta" aria-labelledby="categoryCtaTitle">
+                <div class="category-cta__box">
+                    <p class="category-cta__eyebrow">Sviluppo dedicato</p>
+                    <h2 class="category-cta__title" id="categoryCtaTitle">Vuoi approfondire questa collezione?</h2>
+                    <p class="category-cta__text">
+                        Possiamo supportarti con varianti, personalizzazioni, packaging e informazioni commerciali su
+                        richiesta.
+                    </p>
+                    <a class="btn btn--cta" href="contact.html">Richiedi informazioni</a>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <div class="modal" data-modal>
+        <div class="modal__panel" role="dialog" aria-modal="true" aria-label="Dettaglio prodotto">
+            <div class="modal__top">
+                <button class="modal__close" type="button" data-modal-close>&times;</button>
+            </div>
+
+            <div class="modal__content">
+                <div class="gallery">
+                    <div class="gallery__main">
+                        <img data-gallery-main src="" alt="Immagine principale">
+                    </div>
+                    <div class="gallery__arrows">
+                        <button class="gbtn" type="button" data-gprev aria-label="Immagine precedente">&#8249;</button>
+                        <button class="gbtn" type="button" data-gnext aria-label="Immagine successiva">&#8250;</button>
+                    </div>
+                </div>
+
+                <div class="panel">
+                    <p class="panel__eyebrow">Scheda prodotto</p>
+                    <h2 class="modal__title panel__title" data-modal-title>Prodotto</h2>
+                    <p data-modal-desc>Descrizione prodotto...</p>
+
+                    <div class="panel__actions">
+                        <a class="btn btn--cta" href="contact.html">Richiedi informazioni</a>
+                    </div>
+
+                    <div class="modal-thumbs" data-modal-thumbs></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="site-footer"></div>
+    <script defer src="assets/js/cookie-loader.js"></script>
+</body>
+
+</html>

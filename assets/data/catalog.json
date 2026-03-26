@@ -1,0 +1,447 @@
+{
+  "categories": [
+    {
+      "id": "tovaglie",
+      "name": "Tovaglie",
+      "featured": true,
+      "desc": "Tovaglie in diversi materiali, misure e finiture per collezioni retail e private label.",
+      "cover": "assets/img/products/tovaglie/cover.jpg",
+      "items": [
+        {
+          "id": "tovaglia-01",
+          "name": "FLORISTA",
+          "short": "Personalizzabile, private label",
+          "desc": "Collezione decorativa per la tavola con ampia varieta di disegni, colori e opzioni di personalizzazione per brand e retailer.",
+          "tags": [
+            "Private label",
+            "Packaging"
+          ],
+          "images": [
+            "assets/img/products/tovaglie/tovaglia-01/01.jpg",
+            "assets/img/products/tovaglie/tovaglia-01/02.jpg",
+            "assets/img/products/tovaglie/tovaglia-01/03.jpg"
+          ]
+        },
+        {
+          "id": "tovaglia-02",
+          "name": "MODERNO",
+          "short": "Varianti colore, su richiesta",
+          "desc": "Proposta grafica contemporanea pensata per collezioni versatili, con possibilita di sviluppo su misure e finiture dedicate.",
+          "tags": [
+            "B2B",
+            "Sourcing"
+          ],
+          "images": [
+            "assets/img/products/tovaglie/tovaglia-02/01.jpg",
+            "assets/img/products/tovaglie/tovaglia-02/02.jpg",
+            "assets/img/products/tovaglie/tovaglia-02/03.jpg"
+          ]
+        },
+        {
+          "id": "tovaglia-04",
+          "name": "ELEGANT",
+          "short": "Texture elegante, look raffinato",
+          "desc": "Modello dal gusto sobrio e ricercato, adatto a collezioni coordinate con attenzione a resa visiva e qualita del prodotto.",
+          "tags": [
+            "Private label",
+            "Qualita"
+          ],
+          "images": [
+            "assets/img/products/tovaglie/tovaglia-04/01.jpg",
+            "assets/img/products/tovaglie/tovaglia-04/02.jpg",
+            "assets/img/products/tovaglie/tovaglia-04/03.jpg"
+          ]
+        },
+        {
+          "id": "tovaglia-03",
+          "name": "PERLA",
+          "short": "Finiture premium, etichetta brand",
+          "desc": "Collezione pensata per linee premium con finiture curate, personalizzazione etichetta e supporto alla presentazione prodotto.",
+          "tags": [
+            "Qualita",
+            "Etichette"
+          ],
+          "images": [
+            "assets/img/products/tovaglie/tovaglia-03/01.jpg",
+            "assets/img/products/tovaglie/tovaglia-03/02.jpg",
+            "assets/img/products/tovaglie/tovaglia-03/03.jpg"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "passatoie",
+      "name": "Passatoie",
+      "featured": true,
+      "desc": "Passatoie in diversi materiali e lavorazioni per retail, contract e progetti dedicati.",
+      "cover": "assets/img/products/passatoie/cover.jpg",
+      "items": [
+        {
+          "id": "passatoia-01",
+          "name": "TULUM",
+          "short": "Pattern decorativo, private label",
+          "desc": "Passatoia dal carattere grafico deciso, sviluppabile in varianti coordinate per programmi retail e collezioni a marchio privato.",
+          "tags": [
+            "B2B",
+            "Cotone"
+          ],
+          "images": [
+            "assets/img/products/passatoie/passatoia-01/01.jpg",
+            "assets/img/products/passatoie/passatoia-01/02.jpg",
+            "assets/img/products/passatoie/passatoia-01/03.jpg"
+          ]
+        },
+        {
+          "id": "passatoia-02",
+          "name": "MOSAICO",
+          "short": "Jacquard, sourcing dedicato",
+          "desc": "Soluzione jacquard adatta a collezioni decorative con supporto su sourcing, sviluppo prodotto e scelta finiture.",
+          "tags": [
+            "Jacquard",
+            "Sourcing"
+          ],
+          "images": [
+            "assets/img/products/passatoie/passatoia-02/01.jpg",
+            "assets/img/products/passatoie/passatoia-02/02.jpg",
+            "assets/img/products/passatoie/passatoia-02/03.jpg"
+          ]
+        },
+        {
+          "id": "passatoia-03",
+          "name": "CITRUS",
+          "short": "Contract, packaging su richiesta",
+          "desc": "Passatoia studiata per contesti ad alta rotazione, con possibilita di personalizzazione e packaging dedicato.",
+          "tags": [
+            "Contract",
+            "Packaging"
+          ],
+          "images": [
+            "assets/img/products/passatoie/passatoia-03/01.jpg",
+            "assets/img/products/passatoie/passatoia-03/02.jpg",
+            "assets/img/products/passatoie/passatoia-03/03.jpg"
+          ]
+        },
+        {
+          "id": "passatoia-04",
+          "name": "ANDALUSIA",
+          "short": "Texture decorativa, progetto su richiesta",
+          "desc": "Interpretazione decorativa per collezioni dal gusto caldo e materico, con flessibilita su formato e sviluppo commerciale.",
+          "tags": [
+            "Contract",
+            "Packaging"
+          ],
+          "images": [
+            "assets/img/products/passatoie/passatoia-04/01.jpg",
+            "assets/img/products/passatoie/passatoia-04/02.jpg",
+            "assets/img/products/passatoie/passatoia-04/03.jpg"
+          ]
+        },
+        {
+          "id": "passatoia-05",
+          "name": "WALKMATS",
+          "short": "Percorrenze, collezioni funzionali",
+          "desc": "Linea pensata per programmi funzionali e continuativi, con supporto su qualita, presentazione prodotto e logistica.",
+          "tags": [
+            "Contract",
+            "Packaging"
+          ],
+          "images": [
+            "assets/img/products/passatoie/passatoia-05/01.jpg",
+            "assets/img/products/passatoie/passatoia-05/02.jpg",
+            "assets/img/products/passatoie/passatoia-05/03.jpg"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "tappeti-bagno",
+      "name": "Tappeti bagno",
+      "desc": "Tappeti bagno per retail e private label con misure, colori e finiture sviluppabili su richiesta.",
+      "cover": "assets/img/products/tappeti-bagno/cover.jpg",
+      "items": [
+        {
+          "id": "tappeto-bagno-01",
+          "name": "SCOTT",
+          "short": "Morbido, antiscivolo",
+          "desc": "Tappeto bagno in memory foam con impostazione funzionale e comfort elevato, adatto a linee retail e programmi private label.",
+          "tags": [
+            "Retail",
+            "Private label"
+          ],
+          "images": [
+            "assets/img/products/tappeti-bagno/tappeto-bagno-01/01.jpg",
+            "assets/img/products/tappeti-bagno/tappeto-bagno-01/02.jpg",
+            "assets/img/products/tappeti-bagno/tappeto-bagno-01/03.jpg",
+            "assets/img/products/tappeti-bagno/tappeto-bagno-01/04.jpg"
+          ]
+        },
+        {
+          "id": "tappeto-bagno-02",
+          "name": "SYMBOL",
+          "short": "Colori su richiesta, packaging",
+          "desc": "Soluzione versatile per il bagno con possibilita di sviluppo colore, confezione dedicata e coordinati di collezione.",
+          "tags": [
+            "Packaging",
+            "B2B"
+          ],
+          "images": [
+            "assets/img/products/tappeti-bagno/tappeto-bagno-02/01.jpg",
+            "assets/img/products/tappeti-bagno/tappeto-bagno-02/02.jpg",
+            "assets/img/products/tappeti-bagno/tappeto-bagno-02/03.jpg"
+          ]
+        },
+        {
+          "id": "tappeto-bagno-03",
+          "name": "SCANDINAVIAN",
+          "short": "Bath Mat",
+          "desc": "Proposta bagno con taglio piu premium, pensata per collezioni coordinate e progetti con requisiti di qualita e continuita.",
+          "tags": [
+            "Contract",
+            "Qualita"
+          ],
+          "images": [
+            "assets/img/products/tappeti-bagno/tappeto-bagno-03/01.jpg",
+            "assets/img/products/tappeti-bagno/tappeto-bagno-03/02.jpg",
+            "assets/img/products/tappeti-bagno/tappeto-bagno-03/03.jpg"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "tappeti-cotone",
+      "name": "Tappeti cotone",
+      "featured": true,
+      "desc": "Tappeti in cotone con lavorazioni e varianti decorative per brand, retail e private label.",
+      "cover": "assets/img/products/tappeti-cotone/cover.jpg",
+      "items": [
+        {
+          "id": "tappeto-cotone-01",
+          "name": "UNICOLOR",
+          "short": "Loop and loop, doppio livello",
+          "desc": "Tappeto in cotone con lavorazione strutturata e buona profondita materica, adatto a programmi decorativi coordinati.",
+          "tags": [
+            "Cotone",
+            "B2B"
+          ],
+          "images": [
+            "assets/img/products/tappeti-cotone/tappeto-cotone-01/01.jpg",
+            "assets/img/products/tappeti-cotone/tappeto-cotone-01/02.jpg",
+            "assets/img/products/tappeti-cotone/tappeto-cotone-01/03.jpg",
+            "assets/img/products/tappeti-cotone/tappeto-cotone-01/04.jpg",
+            "assets/img/products/tappeti-cotone/tappeto-cotone-01/05.jpg",
+            "assets/img/products/tappeti-cotone/tappeto-cotone-01/06.jpg",
+            "assets/img/products/tappeti-cotone/tappeto-cotone-01/07.jpg",
+            "assets/img/products/tappeti-cotone/tappeto-cotone-01/08.jpg"
+          ]
+        },
+        {
+          "id": "tappeto-cotone-02",
+          "name": "BICOLOR",
+          "short": "Loop and loop, doppio livello",
+          "desc": "Versione bicolore pensata per collezioni versatili, con sviluppo su palette, etichettatura e dettagli di presentazione.",
+          "tags": [
+            "Etichette",
+            "Retail"
+          ],
+          "images": [
+            "assets/img/products/tappeti-cotone/tappeto-cotone-02/01.jpg",
+            "assets/img/products/tappeti-cotone/tappeto-cotone-02/02.jpg",
+            "assets/img/products/tappeti-cotone/tappeto-cotone-02/03.jpg",
+            "assets/img/products/tappeti-cotone/tappeto-cotone-02/04.jpg",
+            "assets/img/products/tappeti-cotone/tappeto-cotone-02/05.jpg"
+          ]
+        },
+        {
+          "id": "tappeto-cotone-03",
+          "name": "BICOLOR FLAT WEAVING",
+          "short": "Flat weaving, finiture premium",
+          "desc": "Interpretazione piu essenziale del tappeto in cotone, ideale per linee premium con attenzione a texture, finiture e packaging.",
+          "tags": [
+            "Private label",
+            "Qualita"
+          ],
+          "images": [
+            "assets/img/products/tappeti-cotone/tappeto-cotone-03/01.jpg",
+            "assets/img/products/tappeti-cotone/tappeto-cotone-03/02.jpg",
+            "assets/img/products/tappeti-cotone/tappeto-cotone-03/03.jpg",
+            "assets/img/products/tappeti-cotone/tappeto-cotone-03/04.jpg",
+            "assets/img/products/tappeti-cotone/tappeto-cotone-03/05.jpg",
+            "assets/img/products/tappeti-cotone/tappeto-cotone-03/06.jpg",
+            "assets/img/products/tappeti-cotone/tappeto-cotone-03/07.jpg"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "tappeti-ciniglia",
+      "name": "Tappeti ciniglia",
+      "featured": true,
+      "desc": "Tappeti in ciniglia con colori, finiture e configurazioni sviluppabili per collezioni su richiesta.",
+      "cover": "assets/img/products/tappeti-ciniglia/cover.jpg",
+      "items": [
+        {
+          "id": "tappeto-ciniglia-01",
+          "name": "HERITAGE",
+          "short": "Ciniglia, private label",
+          "desc": "Modello in ciniglia personalizzabile per misure, colori e finiture, con supporto su packaging ed etichettatura.",
+          "tags": [
+            "Ciniglia",
+            "B2B",
+            "Private label"
+          ],
+          "images": [
+            "assets/img/products/tappeti-ciniglia/tappeto-ciniglia-01/01.jpg",
+            "assets/img/products/tappeti-ciniglia/tappeto-ciniglia-01/02.jpg",
+            "assets/img/products/tappeti-ciniglia/tappeto-ciniglia-01/03.jpg",
+            "assets/img/products/tappeti-ciniglia/tappeto-ciniglia-01/04.jpg"
+          ]
+        },
+        {
+          "id": "tappeto-ciniglia-02",
+          "name": "DROPS",
+          "short": "Varianti colore, su specifica",
+          "desc": "Soluzione in ciniglia adatta a collezioni stagionali, con supporto su sviluppo colore, controllo qualita e logistica.",
+          "tags": [
+            "Ciniglia",
+            "Sourcing",
+            "QC"
+          ],
+          "images": [
+            "assets/img/products/tappeti-ciniglia/tappeto-ciniglia-02/01.jpg",
+            "assets/img/products/tappeti-ciniglia/tappeto-ciniglia-02/02.jpg",
+            "assets/img/products/tappeti-ciniglia/tappeto-ciniglia-02/03.jpg"
+          ]
+        },
+        {
+          "id": "tappeto-ciniglia-03",
+          "name": "PEARL",
+          "short": "Finiture premium, packaging",
+          "desc": "Proposta premium con opzioni di packaging dedicato, adatta a retailer e distributori attenti alla presentazione del prodotto.",
+          "tags": [
+            "Retail",
+            "Packaging",
+            "Qualita"
+          ],
+          "images": [
+            "assets/img/products/tappeti-ciniglia/tappeto-ciniglia-03/01.jpg",
+            "assets/img/products/tappeti-ciniglia/tappeto-ciniglia-03/02.jpg",
+            "assets/img/products/tappeti-ciniglia/tappeto-ciniglia-03/03.jpg"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "pavimentazione-spc",
+      "name": "Pavimentazione SPC",
+      "desc": "Collezione SPC per interni contemporanei, con finiture decorative e sviluppo dedicato per progetti retail e contract.",
+      "cover": "assets/img/products/pavimentazione-spc/cover.jpg",
+      "items": [
+        {
+          "id": "spc-01",
+          "name": "Effetto legno",
+          "short": "Texture legno, progetto su richiesta",
+          "desc": "Pavimentazione SPC con finitura effetto legno, sviluppabile per collezioni coordinate e specifiche di progetto.",
+          "tags": [
+            "SPC",
+            "Effetto legno",
+            "Project"
+          ],
+          "images": [
+            "assets/img/products/pavimentazione-spc/spc-01/01.jpg",
+            "assets/img/products/pavimentazione-spc/spc-01/02.jpg",
+            "assets/img/products/pavimentazione-spc/spc-01/03.jpg"
+          ]
+        },
+        {
+          "id": "spc-02",
+          "name": "Effetto pietra",
+          "short": "Look materico, contract",
+          "desc": "Versione SPC con finitura effetto pietra, adatta a contesti contract e ambienti dal linguaggio piu essenziale.",
+          "tags": [
+            "SPC",
+            "Effetto pietra",
+            "Contract"
+          ],
+          "images": [
+            "assets/img/products/pavimentazione-spc/spc-02/01.jpg",
+            "assets/img/products/pavimentazione-spc/spc-02/02.jpg",
+            "assets/img/products/pavimentazione-spc/spc-02/03.jpg"
+          ]
+        },
+        {
+          "id": "spc-03",
+          "name": "Linea premium",
+          "short": "Private label, supporto tecnico",
+          "desc": "Linea SPC premium con opzioni di private label, packaging su richiesta e supporto su logistica e controllo qualita.",
+          "tags": [
+            "SPC",
+            "Private label",
+            "QC"
+          ],
+          "images": [
+            "assets/img/products/pavimentazione-spc/spc-03/01.jpg",
+            "assets/img/products/pavimentazione-spc/spc-03/02.jpg",
+            "assets/img/products/pavimentazione-spc/spc-03/03.jpg"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "foglio-decorativo-pvc",
+      "name": "Foglio decorativo per mobili in PVC",
+      "featured": true,
+      "desc": "Fogli decorativi per mobili e superfici con finiture effetto legno, tinta unita e texture premium.",
+      "cover": "assets/img/products/foglio-decorativo-pvc/cover.jpg",
+      "items": [
+        {
+          "id": "stampe-legno",
+          "name": "Stampe legno",
+          "short": "Effetto legno, arredo",
+          "desc": "Fogli decorativi PVC con texture effetto legno per mobili e pannellature, con varianti su colore e venatura.",
+          "tags": [
+            "PVC",
+            "Effetto legno",
+            "Arredo"
+          ],
+          "images": [
+            "assets/img/products/foglio-decorativo-pvc/stampe-legno/01.jpg",
+            "assets/img/products/foglio-decorativo-pvc/stampe-legno/02.jpg",
+            "assets/img/products/foglio-decorativo-pvc/stampe-legno/03.jpg"
+          ]
+        },
+        {
+          "id": "colori-tinta-unita",
+          "name": "Colori tinta unita",
+          "short": "Colori, su specifica",
+          "desc": "Gamma tinta unita per ante e superfici, sviluppabile in versione opaca o lucida per produzioni in serie e contract.",
+          "tags": [
+            "PVC",
+            "Tinta unita",
+            "Contract"
+          ],
+          "images": [
+            "assets/img/products/foglio-decorativo-pvc/colori-tinta-unita/01.jpg",
+            "assets/img/products/foglio-decorativo-pvc/colori-tinta-unita/02.jpg",
+            "assets/img/products/foglio-decorativo-pvc/colori-tinta-unita/03.jpg"
+          ]
+        },
+        {
+          "id": "soft-matt",
+          "name": "Opaco soft-touch",
+          "short": "Soft matt, premium",
+          "desc": "Finitura opaca soft-touch per un effetto elegante e contemporaneo, pensata per linee premium e ambienti moderni.",
+          "tags": [
+            "Soft touch",
+            "Opaco",
+            "Premium"
+          ],
+          "images": [
+            "assets/img/products/foglio-decorativo-pvc/soft-matt/01.jpg",
+            "assets/img/products/foglio-decorativo-pvc/soft-matt/02.jpg",
+            "assets/img/products/foglio-decorativo-pvc/soft-matt/03.jpg"
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,170 @@
+<!doctype html>
+<html lang="it">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Contatti - RM Line</title>
+  <meta name="description"
+    content="Contatta RM Line per private label, sourcing, sviluppo collezioni, packaging e richieste prodotto." />
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+    integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
+  <link rel="stylesheet" href="assets/css/styles.css" />
+  <script defer src="assets/js/main.js"></script>
+  <script defer src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+    integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+</head>
+
+<body>
+  <header class="site-header">
+    <div id="site-navbar"></div>
+  </header>
+
+  <main class="page contact-page contact-page--impact">
+    <section class="contact-hero">
+      <div class="container">
+        <div class="contact-hero__shell">
+          <div class="contact-hero__intro">
+            <div class="contact-hero__eyebrow">Start the conversation</div>
+            <h1 class="contact-hero__title">Contatti</h1>
+            <p class="contact-hero__text">
+              Se hai in mente una collezione, una richiesta private label o un nuovo sviluppo prodotto, possiamo
+              trasformarla in un progetto chiaro, concreto e pronto per il mercato.
+            </p>
+
+            <article class="contact-quick contact-quick--single">
+              <div class="contact-quick__row">
+                <div class="contact-quick__label">Email</div>
+                <a class="contact-quick__value" href="mailto:info@rmline.com">info@rmline.com</a>
+              </div>
+
+              <div class="contact-quick__row">
+                <div class="contact-quick__label">Telefono</div>
+                <a class="contact-quick__value" href="tel:0125676772">0125 676772</a>
+              </div>
+
+              <div class="contact-quick__row">
+                <div class="contact-quick__label">Sede</div>
+                <div class="contact-quick__value">Ivrea (TO), Italia</div>
+              </div>
+            </article>
+          </div>
+
+          <div class="contact-form-panel">
+            <div class="contact-form-panel__head">
+              <div class="contact-form-panel__kicker">Richiedi informazioni</div>
+              <p class="contact-form-panel__text">
+                Scrivici cosa ti serve: quantit&agrave;, materiali, personalizzazioni, tempi e mercato di riferimento.
+              </p>
+            </div>
+
+            <form class="form" id="contactForm">
+              <div class="contact-form-grid">
+                <div class="form__row">
+                  <label class="form__label">Nome *</label>
+                  <input class="form__input" name="name" required placeholder="Il tuo nome">
+                </div>
+
+                <div class="form__row">
+                  <label class="form__label">Azienda</label>
+                  <input class="form__input" name="company" placeholder="Nome azienda">
+                </div>
+
+                <div class="form__row">
+                  <label class="form__label">Email *</label>
+                  <input class="form__input" type="email" name="email" required placeholder="nome@azienda.com">
+                </div>
+
+                <div class="form__row">
+                  <label class="form__label">Telefono</label>
+                  <input class="form__input" name="phone" placeholder="+39 ...">
+                </div>
+              </div>
+
+              <div class="form__row">
+                <label class="form__label">Prodotto d'interesse</label>
+                <select class="form__input" name="product">
+                  <option value="">Seleziona...</option>
+                  <option>Tovaglie</option>
+                  <option>Passatoie</option>
+                  <option>Tappeti bagno</option>
+                  <option>Tappeti cotone</option>
+                </select>
+              </div>
+
+              <div class="form__row">
+                <label class="form__label">Messaggio *</label>
+                <textarea class="form__input contact-form-panel__textarea" name="message" rows="6" required
+                  placeholder="Raccontaci il progetto: categoria, quantita, materiali, misure, tempi e personalizzazioni."></textarea>
+              </div>
+
+              <div class="contact-form-panel__actions">
+                <button class="btn btn--cta contact-form-panel__button" type="submit">Invia richiesta</button>
+                <p class="contact-form-panel__note">
+                  L'invio apre la tua email con il testo gia preparato.
+                </p>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact-stage">
+      <div class="container">
+        <div class="contact-stage__grid">
+          <article class="contact-stage__panel contact-stage__panel--info">
+            <div class="contact-stage__eyebrow">Dettagli utili</div>
+            <h2 class="contact-stage__title">Primo contatto, subito chiaro</h2>
+            <p class="contact-stage__text">
+              Possiamo partire da un'idea, da un campione o da una categoria prodotto. Pi&ugrave; dettagli ci dai, pi&ugrave;
+              velocemente possiamo indirizzarti verso la soluzione giusta.
+            </p>
+
+            <ul class="contact-stage__list">
+              <li>Categoria o tipologia di prodotto.</li>
+              <li>Quantit&agrave; indicative e mercato di destinazione.</li>
+              <li>Personalizzazioni richieste su packaging o labeling.</li>
+              <li>Tempistiche desiderate o scadenze commerciali.</li>
+            </ul>
+
+            <div class="contact-stage__meta">
+              <div>C.F. / P.IVA: 10233800019</div>
+              <div>Supporto: prima, durante e dopo l'ordine</div>
+            </div>
+          </article>
+
+          <article class="contact-stage__panel contact-stage__panel--map">
+            <div class="contact-stage__eyebrow">Dove siamo</div>
+            <h2 class="contact-stage__title">Ivrea, Italia</h2>
+
+            <div class="map contact-stage__map">
+              <div
+                id="contactMap"
+                class="contact-stage__leaflet"
+                data-lat="45.46828327107409"
+                data-lng="7.9175254761050935"
+                data-title="RM Line Srl"
+                data-address="Viale Liguria, 33/2, 10010 Burolo (TO), Italia"
+                aria-label="Mappa RM Line">
+              </div>
+            </div>
+
+            <div class="contact-stage__map-actions">
+              <a class="btn btn--ghost contact-stage__map-button"
+                href="https://maps.google.com/?q=Rm%20Line%20Srl%20Ivrea" target="_blank" rel="noopener">
+                Apri mappa
+              </a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <div id="site-footer"></div>
+
+  <script defer src="assets/js/cookie-loader.js"></script>
+</body>
+
+</html>

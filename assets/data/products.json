@@ -1,0 +1,47 @@
+[
+  {
+    "id": "tablecloths",
+    "name": "Tablecloths",
+    "short": "Private label, personalizzazioni e finiture.",
+    "desc": "Produzione conto terzi e private label. Personalizzazione su materiali, misure, finiture e packaging.",
+    "tags": ["Private Label", "B2B", "Sourcing"],
+    "images": [
+      "assets/img/products/tablecloths/01.jpg",
+      "assets/img/products/tablecloths/02.jpg",
+      "assets/img/products/tablecloths/03.jpg"
+    ]
+  },
+  {
+    "id": "rugs",
+    "name": "Passatoie",
+    "short": "Sourcing e produzione su specifica cliente.",
+    "desc": "Gestione completa: richiesta → preventivo → campione → produzione → spedizione con marchio cliente.",
+    "tags": ["Qualità", "Logistica", "Campioni"],
+    "images": [
+      "assets/img/products/passatoie/passatoie01.jpg",
+      "assets/img/products/passatoie/passatoie02.jpg"
+    ]
+  },
+  {
+    "id": "towels",
+    "name": "Towels",
+    "short": "Retail/contract con etichette e packaging.",
+    "desc": "Soluzioni per retail e contract. Etichette, cartellini, imballo e spedizioni dedicate.",
+    "tags": ["Retail", "Contract", "Etichette"],
+    "images": [
+      "assets/img/products/towels/01.jpg",
+      "assets/img/products/towels/02.jpg"
+    ]
+  },
+  {
+    "id": "blankets",
+    "name": "Blankets",
+    "short": "Controllo qualità e logistica coordinata.",
+    "desc": "Selezione fornitori, controllo qualità e supporto documentazione (dove disponibile) per mercati UE.",
+    "tags": ["Fornitori", "QC", "UE"],
+    "images": [
+      "assets/img/products/blankets/01.jpg",
+      "assets/img/products/blankets/02.jpg"
+    ]
+  }
+]

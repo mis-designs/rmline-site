@@ -1,0 +1,30 @@
+<!-- site/cookie.html -->
+<div class="cookie" id="cookieBanner" hidden>
+  <div class="cookie__card" role="dialog" aria-modal="true">
+    <div class="cookie__text">
+      <h3>We value your privacy</h3>
+      <p>We use cookies to enhance your browsing experience and analyze our traffic.</p>
+      <a class="cookie__link" href="privacy.html">Privacy Policy</a>
+    </div>
+    <div class="cookie__actions">
+      <button class="cookie__btn cookie__btn--ghost" type="button" data-cookie-decline>Decline</button>
+      <button class="cookie__btn cookie__btn--primary" type="button" data-cookie-accept>Accept All</button>
+    </div>
+  </div>
+</div>
+
+<style>
+.cookie{position:fixed;left:14px;right:14px;bottom:14px;z-index:2500;display:flex;justify-content:center}
+.cookie__card{width:min(760px,100%);display:flex;gap:14px;align-items:center;justify-content:space-between;padding:14px;border-radius:18px;background:rgba(255,255,255,.72);border:1px solid rgba(43,45,66,.12);backdrop-filter:blur(12px);box-shadow:0 18px 55px rgba(15,23,42,.18)}
+.cookie__text h3{margin:0 0 6px;color:var(--navy,#2B2D42);font-weight:950;font-size:16px}
+.cookie__text p{margin:0 0 8px;color:var(--muted,#5B6476);line-height:1.55;font-size:13px;max-width:56ch}
+.cookie__link{display:inline-block;font-weight:900;color:var(--brand,#1E6FB9);font-size:12px}
+.cookie__link:hover{text-decoration:underline}
+.cookie__actions{display:flex;gap:10px;flex-wrap:wrap;justify-content:flex-end}
+.cookie__btn{border-radius:14px;padding:10px 14px;font-weight:900;cursor:pointer;border:1px solid transparent;min-width:130px}
+.cookie__btn--ghost{background:rgba(43,45,66,.06);border-color:rgba(43,45,66,.14);color:var(--navy,#2B2D42)}
+.cookie__btn--ghost:hover{background:rgba(43,45,66,.10)}
+.cookie__btn--primary{background:var(--brand,#1E6FB9);color:#fff}
+.cookie__btn--primary:hover{filter:brightness(.95)}
+@media (max-width:640px){.cookie__card{flex-direction:column;align-items:stretch}.cookie__actions{justify-content:stretch}.cookie__btn{width:100%;min-width:auto}}
+</style>
