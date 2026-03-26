@@ -1090,7 +1090,6 @@ html { scroll-padding-top: var(--header-h, 90px); }
   display:none;
   justify-content:center;
   align-items: flex-start;
-  padding-top: calc(var(--header-h, 90px) + 12px);
   padding: calc(var(--header-h, 90px) + 12px) 12px 12px;
   background: rgba(19, 16, 13, .56);
   z-index: 1100;
@@ -1394,8 +1393,8 @@ textarea.form__input{ resize: vertical; }
   max-width: 920px;
   border-radius: 22px;
   padding: 18px 18px;
-  background: rgba(28, 174, 77, 0);
-  border: 1px solid rgba(255, 255, 255, 0.384);
+  background: transparent;
+  border: 1px solid var(--border);
 }
 
 .about__card p{
@@ -1893,7 +1892,6 @@ textarea.form__input{ resize: vertical; }
   gap: 0;
   animation: cert-scroll 16s linear infinite;
   will-change: transform;
-  transform: translateX(calc(-1 * var(--cert-group-w)));
 }
 
 .certifications__group{
@@ -1928,13 +1926,13 @@ textarea.form__input{ resize: vertical; }
 
 @keyframes cert-scroll{
   0%{
-    transform: translateX(calc(-1 * var(--cert-group-w)));
+    transform: translateX(0);
   }
   18%{
-    transform: translateX(calc(-1 * var(--cert-group-w)));
+    transform: translateX(0);
   }
   100%{
-    transform: translateX(0);
+    transform: translateX(calc(-1 * var(--cert-group-w)));
   }
 }
 
@@ -1959,13 +1957,6 @@ textarea.form__input{ resize: vertical; }
     max-height: 48px;
   }
 }
-/* brand */
-.brand{
-  display: flex;
-  align-items: center;
-  gap: 12px;
-}
-
 .brand__link{
   display: inline-flex;
   align-items: center;
@@ -1992,14 +1983,8 @@ textarea.form__input{ resize: vertical; }
     grid-template-areas: "cards content";
     align-items: center;
   }
-}
-
-.services__content{
-  grid-area: content;
-}
-
-.services__cards{
-  grid-area: cards;
+  .services__content{ grid-area: content; }
+  .services__cards{ grid-area: cards; }
 }
 
 .services__title{
@@ -3118,8 +3103,7 @@ textarea.form__input{ resize: vertical; }
     padding: 40px 0;
   }
 
-  .about__card p,
-  .services__text{
+  .about__card p{
     text-align: left;
     text-justify: auto;
   }
@@ -3173,10 +3157,6 @@ textarea.form__input{ resize: vertical; }
   .hero__inner{
     width: calc(100% - 24px);
     margin: 0 auto 14px;
-    padding: 16px 16px 50px;
-    border-radius: 20px;
-    background: linear-gradient(180deg, rgba(21, 17, 14, .10), rgba(21, 17, 14, .64));
-    backdrop-filter: blur(4px);
   }
 
   .hero__title{
@@ -3247,6 +3227,8 @@ textarea.form__input{ resize: vertical; }
     grid-area: auto;
     display: grid;
     gap: 12px;
+    text-align: center;
+    justify-items: center;
   }
 
   .services__title{
@@ -3258,6 +3240,7 @@ textarea.form__input{ resize: vertical; }
     font-size: 15px;
     line-height: 1.7;
     max-width: none;
+    text-align: center;
   }
 
   .products-hero__title,
@@ -3626,5 +3609,194 @@ textarea.form__input{ resize: vertical; }
     backdrop-filter: blur(8px);
     box-shadow: 0 10px 24px rgba(15, 10, 7, .12);
     font-size: 24px;
+  }
+}
+
+/* ===================================================
+   MOBILE EXPERIENCE
+   touch targets · iOS fixes · active feedback · polish
+=================================================== */
+
+/* Prevent iOS from resizing text on orientation change */
+html {
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+}
+
+/* Smoother font rendering on retina displays */
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Remove default iOS blue tap flash on interactive elements */
+a, button, [type="button"], [type="submit"] {
+  -webkit-tap-highlight-color: transparent;
+  touch-action: manipulation; /* removes 300ms tap delay */
+}
+
+/* Momentum scrolling for overflow containers */
+.nav__menu,
+.anchorbar,
+.modal__panel {
+  -webkit-overflow-scrolling: touch;
+}
+
+/* Prevent scroll-chaining when modal reaches top/bottom */
+.modal__panel {
+  overscroll-behavior: contain;
+}
+
+/* Press feedback — only on real touch devices */
+@media (hover: none) and (pointer: coarse) {
+  .btn:active,
+  .services__cta:active {
+    transform: scale(.97);
+    opacity: .88;
+    transition: transform .1s, opacity .1s;
+  }
+  .service-card:active,
+  .showcase-card:active,
+  .collection-card:active,
+  .home-mini-card:active {
+    transform: scale(.99);
+    opacity: .9;
+    transition: transform .12s, opacity .12s;
+  }
+  .nav__link:active {
+    background: rgba(43, 45, 66, .12) !important;
+  }
+}
+
+/* ---- Slider dots: 44 × 44 tap area, visual via ::after ---- */
+.dots {
+  display: flex;
+  align-items: center;
+  gap: 0; /* spacing comes from the 32px min-width of each .dot */
+}
+.dot {
+  min-width: 32px;
+  min-height: 44px;
+  width: auto;
+  height: auto;
+  border: none;
+  background: transparent;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  cursor: pointer;
+}
+.dot::after {
+  content: '';
+  display: block;
+  width: 8px;
+  height: 8px;
+  border-radius: 999px;
+  border: 1px solid rgba(255,255,255,.55);
+  background: rgba(255,255,255,.18);
+  transition: background .2s, border-color .2s, width .25s ease;
+  flex-shrink: 0;
+}
+.dot.is-active {
+  background: transparent;
+}
+.dot.is-active::after {
+  background: #fff;
+  border-color: #fff;
+  width: 18px; /* pill shape for active slide */
+}
+
+/* ---- Slider arrows: 44 × 44 tap area ---- */
+.arrow {
+  min-width: 44px;
+  min-height: 44px;
+  padding: 0;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+}
+
+/* ---- Nav toggle + links: proper tap targets on mobile ---- */
+@media (max-width: 860px) {
+  .nav__toggle {
+    min-width: 44px;
+    min-height: 44px;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .nav__link {
+    min-height: 48px;
+    display: flex;
+    align-items: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    gap: 8px;
+  }
+}
+
+/* ---- Modal gallery arrows: 44 × 44 ---- */
+@media (max-width: 560px) {
+  .modal .gbtn {
+    width: 44px;
+    height: 44px;
+  }
+  .modal .gallery__arrows {
+    top: calc(min(31vh, 250px) / 2 - 22px);
+  }
+}
+
+/* ---- Inputs: 16px min prevents iOS auto-zoom on focus ---- */
+@media (max-width: 768px) {
+  .form__input {
+    font-size: 16px;
+  }
+}
+
+/* ---- Service cards: single column on very small phones ---- */
+@media (max-width: 400px) {
+  .services__cards {
+    grid-template-columns: 1fr;
+  }
+  .service-card {
+    aspect-ratio: 16 / 7;
+  }
+  .service-card img {
+    height: auto;
+    aspect-ratio: 16 / 7;
+  }
+}
+
+/* ---- Safe-area insets (iPhone notch / Dynamic Island / home bar) ---- */
+@supports (padding: env(safe-area-inset-bottom)) {
+  .cookie {
+    bottom: max(12px, env(safe-area-inset-bottom));
+  }
+  .slider__controls {
+    bottom: max(14px, calc(env(safe-area-inset-bottom) + 4px));
+  }
+  @media (max-width: 560px) {
+    .modal {
+      padding-bottom: max(8px, env(safe-area-inset-bottom));
+    }
+  }
+}
+
+/* ---- Tiny phones ≤ 380px: last refinements ---- */
+@media (max-width: 380px) {
+  .hero__title {
+    font-size: 28px;
+  }
+  .home-mini-card {
+    grid-template-rows: 170px auto;
+  }
+  .modal .gallery__main {
+    height: min(26vh, 200px);
+  }
+  .modal .gallery__arrows {
+    top: calc(min(26vh, 200px) / 2 - 22px);
   }
 }
