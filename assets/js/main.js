@@ -112,16 +112,19 @@ function setupMobileMenu() {
   const close = () => {
     menu.classList.remove("is-open");
     toggle.setAttribute("aria-expanded", "false");
+    toggle.classList.remove("is-open"); // Aggiunto per l'animazione dell'hamburger
   };
 
   const open = () => {
     menu.classList.add("is-open");
     toggle.setAttribute("aria-expanded", "true");
+    toggle.classList.add("is-open"); // Aggiunto per l'animazione dell'hamburger
   };
 
   toggle.addEventListener("click", () => {
-    const isOpen = menu.classList.contains("is-open");
-    isOpen ? close() : open();
+    const isOpen = toggle.classList.contains("is-open"); // Controlla lo stato sul pulsante toggle stesso
+    if (isOpen) close();
+    else open();
   });
 
   menu.querySelectorAll("a").forEach((link) => link.addEventListener("click", close));
