@@ -225,17 +225,6 @@ html { scroll-padding-top: var(--header-h, 90px); }
 .burger::before{ top:-7px; }
 .burger::after{ top:7px; }
 
-.nav__toggle:hover .burger{
-  background: transparent;
-}
-.nav__toggle:hover .burger::before{
-  transform: rotate(45deg);
-  top: 0;
-}
-.nav__toggle:hover .burger::after{
-  transform: rotate(-45deg);
-  top: 0;
-}
 
 @media (max-width: 860px){
   .nav{
