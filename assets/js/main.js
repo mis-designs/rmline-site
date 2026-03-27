@@ -141,6 +141,12 @@ function setupMobileMenu() {
   window.addEventListener("resize", () => {
     if (window.innerWidth > 860) close();
   }, { passive: true });
+
+  // Hover to open — only on real pointer devices (mouse/trackpad)
+  if (window.matchMedia("(hover: hover) and (pointer: fine)").matches) {
+    toggle.addEventListener("mouseenter", open);
+    nav.addEventListener("mouseleave", close);
+  }
 }
 
 function setFooterYear() {
@@ -237,6 +243,7 @@ function initSlider() {
     if (isAnimating) return;
 
     if (visualIndex === 0) {
+      isAnimating = true;
       setTransition(false);
       visualIndex = realCount;
       index = realCount - 1;
@@ -249,6 +256,7 @@ function initSlider() {
       return;
     }
 
+    isAnimating = true;
     visualIndex -= 1;
     index = Math.min(visualIndex, realCount - 1);
     render();
@@ -502,11 +510,18 @@ function renderCategoryItemsPage(catalog) {
 
     mainImg?.addEventListener("load", syncOrientation);
 
+    const prevGbtn = modal.querySelector("[data-gprev]");
+    const nextGbtn = modal.querySelector("[data-gnext]");
+    prevGbtn?.addEventListener("click", () => show(idx - 1));
+    nextGbtn?.addEventListener("click", () => show(idx + 1));
+
     const show = (i) => {
       if (!imgs.length) return;
       idx = (i + imgs.length) % imgs.length;
+      if (!mainImg) return;
       mainImg.src = imgs[idx];
       mainImg.alt = `${currentItemName} - immagine ${idx + 1}`;
+      if (mainImg.complete) syncOrientation();
 
       if (thumbsWrap) {
         thumbsWrap.querySelectorAll(".modal-thumb").forEach((thumb, thumbIndex) => {
@@ -518,6 +533,7 @@ function renderCategoryItemsPage(catalog) {
     preload(imgs[(idx - 1 + imgs.length) % imgs.length]);
   };
 
+    let scrollRafId = null;
     const resetScroll = () => {
       if (contentWrap) contentWrap.scrollTop = 0;
       if (panel) panel.scrollTop = 0;
@@ -526,8 +542,8 @@ function renderCategoryItemsPage(catalog) {
 
     const open = (item) => {
       currentItemName = cleanText(item.name, "Prodotto");
-      title.textContent = currentItemName;
-      desc.textContent = cleanText(item.desc, "Dettagli disponibili su richiesta.");
+      if (title) title.textContent = currentItemName;
+      if (desc) desc.textContent = cleanText(item.desc, "Dettagli disponibili su richiesta.");
 
       imgs = (item.images || []).filter(Boolean);
     idx = 0;
@@ -549,32 +565,26 @@ function renderCategoryItemsPage(catalog) {
 
     show(0);
 
-    const prevBtn = modal.querySelector("[data-gprev]");
-    const nextBtn = modal.querySelector("[data-gnext]");
-    if (prevBtn && nextBtn) {
-      const prevClone = prevBtn.cloneNode(true);
-      const nextClone = nextBtn.cloneNode(true);
-      prevBtn.replaceWith(prevClone);
-      nextBtn.replaceWith(nextClone);
-
-      prevClone.addEventListener("click", () => show(idx - 1));
-      nextClone.addEventListener("click", () => show(idx + 1));
-    }
+    const singleImg = imgs.length <= 1;
+    if (prevGbtn) prevGbtn.disabled = singleImg;
+    if (nextGbtn) nextGbtn.disabled = singleImg;
 
     modal.classList.add("is-open");
     document.body.style.overflow = "hidden";
     resetScroll();
-    window.requestAnimationFrame(resetScroll);
+    scrollRafId = window.requestAnimationFrame(resetScroll);
   };
 
   const close = () => {
+    if (scrollRafId) { window.cancelAnimationFrame(scrollRafId); scrollRafId = null; }
     modal.classList.remove("is-open");
     document.body.style.overflow = "";
   };
 
   window.addEventListener("resize", () => {
     if (!modal.classList.contains("is-open")) return;
-    window.requestAnimationFrame(resetScroll);
+    if (scrollRafId) window.cancelAnimationFrame(scrollRafId);
+    scrollRafId = window.requestAnimationFrame(resetScroll);
   }, { passive: true });
 
     closeBtn?.addEventListener("click", close);

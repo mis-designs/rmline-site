@@ -225,6 +225,21 @@ html { scroll-padding-top: var(--header-h, 90px); }
 .burger::before{ top:-7px; }
 .burger::after{ top:7px; }
 
+/* Burger → X when menu is open or toggle is hovered */
+.nav__toggle.is-open .burger,
+.nav__toggle:hover .burger{
+  background: transparent;
+}
+.nav__toggle.is-open .burger::before,
+.nav__toggle:hover .burger::before{
+  transform: rotate(45deg);
+  top: 0;
+}
+.nav__toggle.is-open .burger::after,
+.nav__toggle:hover .burger::after{
+  transform: rotate(-45deg);
+  top: 0;
+}
 
 @media (max-width: 860px){
   .nav{
