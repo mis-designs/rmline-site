@@ -518,6 +518,12 @@ function renderCategoryItemsPage(catalog) {
     preload(imgs[(idx - 1 + imgs.length) % imgs.length]);
   };
 
+    const resetScroll = () => {
+      if (contentWrap) contentWrap.scrollTop = 0;
+      if (panel) panel.scrollTop = 0;
+      if (thumbsWrap) thumbsWrap.scrollLeft = 0;
+    };
+
     const open = (item) => {
       currentItemName = cleanText(item.name, "Prodotto");
       title.textContent = currentItemName;
@@ -557,20 +563,19 @@ function renderCategoryItemsPage(catalog) {
 
     modal.classList.add("is-open");
     document.body.style.overflow = "hidden";
-    if (contentWrap) contentWrap.scrollTop = 0;
-    if (panel) panel.scrollTop = 0;
-    if (thumbsWrap) thumbsWrap.scrollLeft = 0;
-    if (modalPanel) modalPanel.scrollTop = 0;
-    window.requestAnimationFrame(() => {
-      if (contentWrap) contentWrap.scrollTop = 0;
-      if (panel) panel.scrollTop = 0;
-    });
+    resetScroll();
+    window.requestAnimationFrame(resetScroll);
   };
 
   const close = () => {
     modal.classList.remove("is-open");
     document.body.style.overflow = "";
   };
+
+  window.addEventListener("resize", () => {
+    if (!modal.classList.contains("is-open")) return;
+    window.requestAnimationFrame(resetScroll);
+  }, { passive: true });
 
     closeBtn?.addEventListener("click", close);
     modal.addEventListener("click", (e) => {
